@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order - Sip and Splurge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 30px;
+            text-align: center;
+            color: #00bcd4;
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #bbb;
+        }
+
+        .order-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            flex-direction: column;
+            padding: 50px;
+        }
+
+        .order-form {
+            background-color: #1c1c1c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+        }
+
+        .order-form h2 {
+            text-align: center;
+            color: #00bcd4;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .order-form label {
+            color: #bbb;
+            font-size: 1.1em;
+            margin: 10px 0 5px;
+            display: block;
+        }
+
+        .order-form input,
+        .order-form select,
+        .order-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background-color: #333;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .order-form input:focus,
+        .order-form select:focus,
+        .order-form textarea:focus {
+            border: 2px solid #00bcd4;
+            outline: none;
+        }
+
+        .order-form button {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-form button:hover {
+            background-color: #0097a7;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>Your Refreshing Beverage Experience</p>
+    </header>
+
+    <div class="order-container">
+        <div class="order-form">
+            <h2>Place Your Order</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" required placeholder="Enter quantity" min="1" max="10">
+
+                <label for="special_notes">Special Notes</label>
+                <textarea id="special_notes" name="special_notes" rows="4" placeholder="Enter any special instructions (optional)"></textarea>
+
+                <button type="submit"><a href="confirm.html" style="text-decoration: none;">Place Order</a></button>
+            </form>
+        </div>
+    </div>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu - Mocktails, Coffee, Boba Tea & Fresh Juices</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #00bcd4;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            color: #bbb;
+            font-size: 1.2em;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 20px;
+        }
+
+        .menu-category {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+
+        .menu-item {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.6);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .menu-item h3 {
+            color: #00bcd4;
+            font-size: 1.5em;
+            margin-top: 15px;
+        }
+
+        .menu-item p {
+            color: #bbb;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 1.5em;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: #0097a7;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sip & Splurge </h1>
+        <p>On Your Refreshing Beverage Experience</p>
+    </header>
+
+    <div class="menu-container">
+        <!-- Mocktail Section -->
+        <div class="menu-category">
+            <div class="menu-item">
+                <img src="https://as1.ftcdn.net/v2/jpg/07/52/37/62/1000_F_752376213_ArPeT3kDmTKbvluRZwGGGSTlFZ3CZ6yD.jpg" alt="Fruit Punch Mocktail">
+                <h3>Fruit Punch Mocktail</h3>
+                <p>A sweet blend of tropical fruits</p>
+                <div class="price">₹200</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://thecandidlifestyle.com/wp-content/uploads/2024/06/image-40.jpeg" alt="Blue Lagoon">
+                <h3>Blue Lagoon</h3>
+                <p>Refreshing citrus drink with a cool blue hue</p>
+                <div class="price">₹250</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://assets.afcdn.com/recipe/20180801/81659_w1024h768c1cx2774cy1849.jpg" alt="Virgin Mojito">
+                <h3>Virgin Mojito</h3>
+                <p>Minty, lime-flavored freshness</p>
+                <div class="price">₹220</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+        </div>
+
+        <!-- Coffee Section -->
+        <div class="menu-category">
+            <div class="menu-item">
+                <img src="https://img.freepik.com/premium-photo/white-coffee-cup-roasted-coffee-beans-around_35570-794.jpg?w=900" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Rich and bold espresso</p>
+                <div class="price">₹150</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://kitchenhousecoffee.com/wp-content/uploads/2023/10/mocha-cappuccino-1024x585.webp" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Creamy and frothy cappuccino</p>
+                <div class="price">₹180</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://starbmag.com/wp-content/uploads/2022/01/Cold-brewed-coffee.png" alt="Latte">
+                <h3>Latte</h3>
+                <p>Smooth and creamy espresso with steamed milk</p>
+                <div class="price">₹170</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+        </div>
+
+        <!-- Boba Tea Section -->
+        <div class="menu-category">
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.hEuOLBhuTRI8jAxAwIZpsgHaE8?rs=1&pid=ImgDetMain" alt="Classic Boba Tea">
+                <h3>Classic Boba Tea</h3>
+                <p>Sweet milk tea with chewy tapioca pearls</p>
+                <div class="price">₹220</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.MHEVxN4xaksndTFePa0wVgHaEK?rs=1&pid=ImgDetMain" alt="Matcha Boba Tea">
+                <h3>Matcha Boba</h3>
+                <p>Green tea and tapioca pearls for a refreshing taste</p>
+                <div class="price">₹250</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://img.freepik.com/premium-photo/taro-boba-tea-latte-glass-cup_98908-2341.jpg" alt="Taro Boba Tea">
+                <h3>Taro Boba Tea</h3>
+                <p>A creamy and sweet taro root flavor</p>
+                <div class="price">₹240</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+        </div>
+
+        <!-- Fresh Juices Section -->
+        <div class="menu-category">
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.1x8KQJBXxmJZ6WQbHv9NDQHaEK?w=780&h=438&rs=1&pid=ImgDetMain" alt="Orange Juice">
+                <h3>Orange Juice</h3>
+                <p>Freshly squeezed orange juice</p>
+                <div class="price">₹150</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://cdn.cdnparenting.com/articles/2020/03/27141555/Watermelon-Juice-Recipe.jpg" alt="Watermelon Juice">
+                <h3>Watermelon Juice</h3>
+                <p>Refreshing watermelon juice, perfect for summer</p>
+                <div class="price">₹180</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://img.freepik.com/premium-photo/pineapple-juice-with-splashes-with-pineapple-fruit-studio-background-restaurant-with-garden_741910-8041.jpg" alt="Pineapple Juice">
+                <h3>Pineapple Juice</h3>
+                <p>Sweet and tangy pineapple juice</p>
+                <div class="price">₹160</div>
+                <button class="btn"><a href="order-now.html" style="text-decoration: none;">ORDER NOW</a></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chill & Sip. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
